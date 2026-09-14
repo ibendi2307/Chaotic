@@ -3,8 +3,9 @@
   "item.chaotic.uranium": "Uranium",
   "block.chaotic.uraniumore": "Uranium Ore",
   "item.chaotic.uranium_sword": "Uranium Sword",
-  "item.chaotic.uranium_sword.tooltip": "25% of Explode on attack \n50% of Wither applied on attack",
+  "item.chaotic.uranium_sword.tooltip": "25% Explosion on attack \n50% Apply Wither on attack",
   "item.chaotic.uranium_cookie": "Uranium Cookie",
+  "item.chaotic.uranium_drink": "Uranium Drink",
   "creativetab.chaotic.uranium_tab": "Chaotic: Uranium",
 
   "chaotic.configuration.title": "Chaotic Configs",

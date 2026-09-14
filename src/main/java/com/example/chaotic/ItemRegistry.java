@@ -1,9 +1,6 @@
 package com.example.chaotic;
 
-import com.example.chaotic.Items.uranium;
-import com.example.chaotic.Items.uranium_cookie;
-import com.example.chaotic.Items.uranium_necklace;
-import com.example.chaotic.Items.uraniumsword;
+import com.example.chaotic.Items.*;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,4 +16,5 @@ public class ItemRegistry {
     public static final DeferredItem<Item> UraniumSword = ITEMS.registerItem("uranium_sword", uraniumsword::new);
     public static final DeferredItem<Item> UraniumCookie = ITEMS.registerItem("uranium_cookie", uranium_cookie::new);
     public static final DeferredItem<Item> UraniumNecklace = ITEMS.registerItem("uranium_necklace", uranium_necklace::new);
+    public static final DeferredItem<Item> UraniumDrink = ITEMS.registerItem("uranium_drink", uranium_drink::new);
 }
