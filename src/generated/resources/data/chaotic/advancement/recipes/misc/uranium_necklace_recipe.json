@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chaotic:uranium_necklace_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "uranium_necklace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:uranium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "uranium_necklace"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chaotic:uranium_necklace_recipe"
+    ]
+  }
+}

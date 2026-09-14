@@ -53,5 +53,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("Uranium")
                 .unlockedBy("uranium_cookie", has(ItemRegistry.Uranium))
                 .save(output, "chaotic:uranium_cookie_recipe");
+        shaped(RecipeCategory.MISC, ItemRegistry.UraniumNecklace.get())
+                .pattern("NNN")
+                .pattern("GUG")
+                .pattern(" G ")
+                .group("Uranium")
+                .define('N', Items.GOLD_NUGGET)
+                .define('G', Items.GOLD_INGOT)
+                .define('U', ItemRegistry.Uranium)
+                .unlockedBy("uranium_necklace", has(ItemRegistry.Uranium))
+                .save(output, "chaotic:uranium_necklace_recipe");
     }
 }

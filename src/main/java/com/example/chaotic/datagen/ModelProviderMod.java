@@ -19,6 +19,7 @@ public class ModelProviderMod extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(ItemRegistry.Uranium.get(), ModelTemplates.FLAT_ITEM);
         blockModels.createTrivialCube(BlockRegistry.Uraniumore.get());
+        blockModels.createTrivialCube(BlockRegistry.EnrichedUraniumBlock.get());
         itemModels.generateFlatItem(ItemRegistry.UraniumSword.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ItemRegistry.UraniumCookie.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.UraniumNecklace.get(), ModelTemplates.FLAT_ITEM);

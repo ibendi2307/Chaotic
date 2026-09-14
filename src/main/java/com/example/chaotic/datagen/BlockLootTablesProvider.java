@@ -20,6 +20,7 @@ public class BlockLootTablesProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         add(BlockRegistry.Uraniumore.get(), createOreDrop(BlockRegistry.Uraniumore.get(), ItemRegistry.Uranium.get()));
+        dropSelf(BlockRegistry.EnrichedUraniumBlock.get());
     }
 
     @Override

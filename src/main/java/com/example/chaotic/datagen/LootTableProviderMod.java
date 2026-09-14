@@ -40,6 +40,7 @@ public class LootTableProviderMod extends LootTableProvider {
         @Override
         protected void generate() {
             createOreDrop(BlockRegistry.Uraniumore.get(), ItemRegistry.Uranium.asItem());
+            dropSelf(BlockRegistry.EnrichedUraniumBlock.get());
         }
 
     }
