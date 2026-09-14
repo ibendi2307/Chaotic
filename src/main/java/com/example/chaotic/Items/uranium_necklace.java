@@ -42,8 +42,8 @@ public class uranium_necklace extends Item implements ICurioItem{
         LivingEntity entity = slotContext.entity();
         Level level = entity.level();
 
-        if (!level.isClientSide()) {
-            stack.set(DataComponents.DAMAGE,stack.getDamageValue() - 1);
+        if (!level.isClientSide() && slotContext.entity() instanceof Player player) {
+            slotContext.entity().addEffect(new MobEffectInstance(MobEffects.SPEED, 5, 1));
         }
         ICurioItem.super.curioTick(slotContext, stack);
         slotContext.entity().addEffect(new MobEffectInstance(MobEffects.SPEED, 5, 1));
