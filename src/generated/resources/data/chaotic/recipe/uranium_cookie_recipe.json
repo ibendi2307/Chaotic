@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "Uranium",
+  "key": {
+    "D": "minecraft:wheat",
+    "U": "chaotic:uranium"
+  },
+  "pattern": [
+    "   ",
+    "DUD",
+    "   "
+  ],
+  "result": {
+    "id": "chaotic:uranium_cookie"
+  }
+}
