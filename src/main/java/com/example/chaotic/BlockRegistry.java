@@ -1,6 +1,7 @@
 package com.example.chaotic;
 
 import com.example.chaotic.Items.uranium;
+import com.example.chaotic.blocks.EUBentity;
 import com.example.chaotic.blocks.enricheduraniumblock;
 import com.example.chaotic.blocks.uraniumore;
 import net.minecraft.world.item.BlockItem;

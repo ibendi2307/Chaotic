@@ -65,6 +65,7 @@ public class Chaotic {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        BlockEntities.BLOCK_ENTITY_REGISTER.register(modEventBus);
         // Register the Deferred Register to the mod event bus so blocks get registered
         //BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
