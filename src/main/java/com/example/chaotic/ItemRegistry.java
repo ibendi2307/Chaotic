@@ -17,4 +17,5 @@ public class ItemRegistry {
     public static final DeferredItem<Item> UraniumCookie = ITEMS.registerItem("uranium_cookie", uranium_cookie::new);
     public static final DeferredItem<Item> UraniumNecklace = ITEMS.registerItem("uranium_necklace", uranium_necklace::new);
     public static final DeferredItem<Item> UraniumDrink = ITEMS.registerItem("uranium_drink", uranium_drink::new);
+    public static final DeferredItem<Item> EnrichedUranium = ITEMS.registerItem("enriched_uranium", uranium::new);
 }

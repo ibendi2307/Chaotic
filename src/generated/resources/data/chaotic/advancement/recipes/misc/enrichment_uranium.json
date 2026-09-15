@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "enriched_uranium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:uranium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chaotic:enrichment_uranium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "enriched_uranium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chaotic:enrichment_uranium"
+    ]
+  }
+}

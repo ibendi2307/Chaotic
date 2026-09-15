@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": "chaotic:enriched_uranium",
+    "G": "minecraft:glowstone_dust"
+  },
+  "pattern": [
+    "EGE",
+    "GEG",
+    "EGE"
+  ],
+  "result": {
+    "id": "chaotic:enriched_uranium_block"
+  }
+}

@@ -1,5 +1,6 @@
 package com.example.chaotic.datagen;
 
+import com.example.chaotic.BlockRegistry;
 import com.example.chaotic.ItemRegistry;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -63,5 +64,21 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('U', ItemRegistry.Uranium)
                 .unlockedBy("uranium_necklace", has(ItemRegistry.Uranium))
                 .save(output, "chaotic:uranium_necklace_recipe");
+        shaped(RecipeCategory.MISC, ItemRegistry.EnrichedUranium.get())
+                .pattern("GGG")
+                .pattern("GUG")
+                .pattern("GGG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('U', ItemRegistry.Uranium)
+                .unlockedBy("enriched_uranium", has(ItemRegistry.Uranium))
+                .save(output, "chaotic:enrichment_uranium");
+        shaped(RecipeCategory.MISC, BlockRegistry.EUBItem)
+                .pattern("EGE")
+                .pattern("GEG")
+                .pattern("EGE")
+                .define('E', ItemRegistry.EnrichedUranium)
+                .define('G', Items.GLOWSTONE_DUST)
+                .unlockedBy("enriched_uranium_block", has(ItemRegistry.EnrichedUranium))
+                .save(output, "chaotic:enriched_uranium_block_recipe");
     }
 }
