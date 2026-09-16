@@ -22,7 +22,10 @@ public class ModPlaceFeature {
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configFeature = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, OVERWORLD_URANIUM_ORE_PLACED_KEY, configFeature.getOrThrow(ModConfigFeature.OVERWORLD_URANIUM_ORE_KEY), OrePlacements.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),  VerticalAnchor.absolute(80))));
+        register(context, OVERWORLD_URANIUM_ORE_PLACED_KEY,
+                configFeature.getOrThrow(ModConfigFeature.OVERWORLD_URANIUM_ORE_KEY),
+                OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),
+                        VerticalAnchor.absolute(40))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
