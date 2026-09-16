@@ -19,5 +19,5 @@ public class ItemRegistry {
     public static final DeferredItem<Item> UraniumDrink = ITEMS.registerItem("uranium_drink", uranium_drink::new);
     public static final DeferredItem<Item> EnrichedUranium = ITEMS.registerItem("enriched_uranium", uranium::new);
     public static final DeferredItem<Item> LightningWand = ITEMS.registerItem("lightning_wand", lightningwand::new);
-    public static final DeferredItem<Item> Shuriken = ITEMS.registerItem("shuriken", lightningwand::new);
+    //public static final DeferredItem<Item> Shuriken = ITEMS.registerItem("shuriken", lightningwand::new);
 }

@@ -19,8 +19,10 @@ public class TagProviderMod extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(BlockRegistry.Uraniumore.getKey());
+                .add(BlockRegistry.Uraniumore.getKey())
+                .add(BlockRegistry.EnrichedUraniumBlock.getKey());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(BlockRegistry.Uraniumore.getKey());
+                .add(BlockRegistry.Uraniumore.getKey())
+                .add(BlockRegistry.EnrichedUraniumBlock.getKey());
     }
 }

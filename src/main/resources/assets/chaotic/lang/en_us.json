@@ -7,6 +7,13 @@
   "item.chaotic.uranium_cookie": "Uranium Cookie",
   "item.chaotic.uranium_drink": "Uranium Drink",
   "creativetab.chaotic.uranium_tab": "Chaotic: Uranium",
+  "creativetab.chaotic.misc": "Misc",
+  "block.chaotic.enriched_uranium_block": "Block of Enriched Uranium",
+  "item.chaotic.enriched_uranium": "Enriched Uranium",
+  "item.chaotic.uranium_necklace": "Uranium Necklace",
+  "item.chaotic.lightning_wand": "Lightning Wand",
+
+
 
   "chaotic.configuration.title": "Chaotic Configs",
   "chaotic.configuration.section.chaotic.common.toml": "Chaotic Configs",

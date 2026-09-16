@@ -21,7 +21,22 @@ public class ModCreativeTabs {
                 output.accept(ItemRegistry.UraniumCookie);
                 output.accept(ItemRegistry.UraniumSword);
                 output.accept(BlockRegistry.Uraniumoreitem);
+                output.accept(BlockRegistry.EUBItem);
+                output.accept(ItemRegistry.EnrichedUranium);
+                output.accept(ItemRegistry.UraniumDrink);
+                output.accept(ItemRegistry.UraniumNecklace);
             })
+
+            .build());
+    public static final Supplier<CreativeModeTab> Chaotic_Misc = CREATIVE_MODE_TABS.register("chaoitc_misc", () -> CreativeModeTab.builder()
+            .icon(() -> new ItemStack(ItemRegistry.LightningWand.get()))
+            .title(Component.translatable("creativetab.chaotic.misc"))
+            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+            .displayItems((itemDisplayParameters, output) -> {
+                output.accept(ItemRegistry.LightningWand);
+            })
+
+
 
             .build());
     public static void register (IEventBus eventBus) {

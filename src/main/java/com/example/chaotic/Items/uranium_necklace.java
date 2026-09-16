@@ -4,7 +4,10 @@ package com.example.chaotic.Items;
 import com.example.chaotic.ItemRegistry;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -27,7 +30,7 @@ import java.util.function.Consumer;
 
 public class uranium_necklace extends Item implements ICurioItem{
     public uranium_necklace(Properties properties) {
-        super(properties.stacksTo(1).durability(200));
+        super(properties.stacksTo(1).durability(8400));
 
 
     }
@@ -48,8 +51,12 @@ public class uranium_necklace extends Item implements ICurioItem{
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         LivingEntity entity = slotContext.entity();
         Level level = entity.level();
+        RandomSource randSource = level.getRandom();
 
-        if (!level.isClientSide() && slotContext.entity() instanceof Player player) {
+        if (!level.isClientSide() && slotContext.entity() instanceof Player player && level instanceof ServerLevel serverLevel) {
+            stack.hurtAndBreak(1, serverLevel.getLevel(),entity.asLivingEntity(), item -> {
+                level.playLocalSound(entity.blockPosition(), SoundEvents.CHAIN_BREAK, SoundSource.AMBIENT, 1.0f,1.0f, false);
+            });
             slotContext.entity().addEffect(new MobEffectInstance(MobEffects.SPEED, 5, 1));
         }
     }

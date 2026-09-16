@@ -14,7 +14,7 @@ import org.jspecify.annotations.Nullable;
 public class enricheduraniumblock extends Block implements IBlockExtension, EntityBlock{
 
     public enricheduraniumblock(Properties properties) {
-        super(properties.requiresCorrectToolForDrops().sound(SoundType.AMETHYST).strength(4f,20));
+        super(properties.requiresCorrectToolForDrops().sound(SoundType.AMETHYST).strength(8f,6));
     }
 
     public static <E extends BlockEntity, A extends BlockEntity> @Nullable BlockEntityTicker<A> createTickerHelper(

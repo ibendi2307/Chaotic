@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": "minecraft:copper_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    " R ",
+    " SR",
+    "S  "
+  ],
+  "result": {
+    "id": "chaotic:lightning_wand"
+  }
+}

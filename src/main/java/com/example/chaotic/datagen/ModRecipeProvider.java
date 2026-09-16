@@ -80,5 +80,21 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('G', Items.GLOWSTONE_DUST)
                 .unlockedBy("enriched_uranium_block", has(ItemRegistry.EnrichedUranium))
                 .save(output, "chaotic:enriched_uranium_block_recipe");
+        shaped(RecipeCategory.FOOD, ItemRegistry.UraniumDrink)
+                .pattern(" U ")
+                .pattern(" B ")
+                .pattern("   ")
+                .define('U', ItemRegistry.Uranium)
+                .define('B', Items.GLASS_BOTTLE)
+                .unlockedBy("uranium_drink", has(ItemRegistry.Uranium))
+                .save(output, "chaotic:uranium_drink_recipe");
+        shaped(RecipeCategory.COMBAT, ItemRegistry.LightningWand)
+                .pattern(" R ")
+                .pattern(" SR")
+                .pattern("S  ")
+                .define('R', Items.COPPER_INGOT)
+                .define('S', Items.STICK)
+                .unlockedBy("lightning_wand", has(ItemRegistry.LightningWand))
+                .save(output, "chaotic:lightning_wand_recipe");
     }
 }

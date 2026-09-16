@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": "minecraft:glass_bottle",
+    "U": "chaotic:uranium"
+  },
+  "pattern": [
+    " U ",
+    " B ",
+    "   "
+  ],
+  "result": {
+    "id": "chaotic:uranium_drink"
+  }
+}

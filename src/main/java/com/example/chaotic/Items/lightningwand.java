@@ -13,7 +13,7 @@ import net.neoforged.neoforge.common.extensions.IItemExtension;
 public class lightningwand extends Item  implements IItemExtension {
 
     public lightningwand(Properties properties) {
-        super(properties);
+        super(properties.durability(85));
     }
 
     @Override
@@ -24,9 +24,15 @@ public class lightningwand extends Item  implements IItemExtension {
             if (lightningBolt != null) {
                 lightningBolt.setPos(context.getClickLocation());
                 serverLevel.addFreshEntity(lightningBolt);
-                context.getPlayer().getCooldowns().addCooldown(context.getItemInHand(), 800);
+                context.getPlayer().getCooldowns().addCooldown(context.getItemInHand(), 100);
+                context.getItemInHand().hurtAndBreak(5, context.getPlayer().getLivingEntity(), context.getHand());
             }
         }
         return super.useOn(context);
+    }
+
+    @Override
+    public boolean isDamageable(ItemStack stack) {
+        return true;
     }
 }
