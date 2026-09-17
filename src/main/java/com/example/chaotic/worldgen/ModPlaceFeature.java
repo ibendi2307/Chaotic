@@ -24,7 +24,7 @@ public class ModPlaceFeature {
 
         register(context, OVERWORLD_URANIUM_ORE_PLACED_KEY,
                 configFeature.getOrThrow(ModConfigFeature.OVERWORLD_URANIUM_ORE_KEY),
-                OrePlacements.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),
+                OrePlacements.commonOrePlacement(6, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),
                         VerticalAnchor.absolute(40))));
     }
 

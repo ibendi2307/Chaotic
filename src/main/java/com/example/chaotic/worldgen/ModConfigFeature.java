@@ -27,7 +27,7 @@ public class ModConfigFeature {
         RuleTest stoneReplacebale = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         register(context, OVERWORLD_URANIUM_ORE_KEY, Feature.ORE,
                 new OreConfiguration(List.of(
-                OreConfiguration.target(stoneReplacebale, BlockRegistry.Uraniumore.get().defaultBlockState())),2));
+                OreConfiguration.target(stoneReplacebale, BlockRegistry.Uraniumore.get().defaultBlockState())),4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
