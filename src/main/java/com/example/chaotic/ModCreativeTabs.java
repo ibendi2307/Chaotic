@@ -25,6 +25,7 @@ public class ModCreativeTabs {
                 output.accept(ItemRegistry.EnrichedUranium);
                 output.accept(ItemRegistry.UraniumDrink);
                 output.accept(ItemRegistry.UraniumNecklace);
+                output.accept(ItemRegistry.UraniumRing);
             })
 
             .build());
@@ -34,6 +35,7 @@ public class ModCreativeTabs {
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ItemRegistry.LightningWand);
+                output.accept(ItemRegistry.LightningStaff);
             })
 
 
