@@ -27,5 +27,7 @@ public class ModelProviderMod extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.UraniumDrink.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.EnrichedUranium.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.LightningWand.get(),ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.LightningStaff.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.UraniumRing.get(), ModelTemplates.FLAT_ITEM);
     }
 }

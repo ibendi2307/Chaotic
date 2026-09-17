@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chaotic:lightning_wand_recipe"
+        "recipe": "chaotic:lighting_staff_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "lightning_wand": {
+    "lightning_staff": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_ingot"
+            "items": "chaotic:lightning_wand"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "lightning_wand"
+      "lightning_staff"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chaotic:lightning_wand_recipe"
+      "chaotic:lighting_staff_recipe"
     ]
   }
 }

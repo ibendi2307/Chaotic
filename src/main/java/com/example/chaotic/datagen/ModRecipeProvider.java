@@ -94,7 +94,23 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("S  ")
                 .define('R', Items.COPPER_INGOT)
                 .define('S', Items.STICK)
-                .unlockedBy("lightning_wand", has(ItemRegistry.LightningWand))
+                .unlockedBy("lightning_wand", has(Items.COPPER_INGOT))
                 .save(output, "chaotic:lightning_wand_recipe");
+        shaped(RecipeCategory.COMBAT, ItemRegistry.LightningStaff)
+                .pattern("  C")
+                .pattern(" B ")
+                .pattern("B  ")
+                .define('B', Items.BREEZE_ROD)
+                .define('C', Items.COPPER_BLOCK.asList().get(0))
+                .unlockedBy("lightning_staff", has(ItemRegistry.LightningWand))
+                .save(output, "chaotic:lighting_staff_recipe");
+        shaped(RecipeCategory.MISC, ItemRegistry.UraniumRing)
+                .pattern(" G ")
+                .pattern("U G")
+                .pattern(" G ")
+                .define('G',Items.GOLD_INGOT)
+                .define('U', ItemRegistry.Uranium)
+                .unlockedBy("uranium_ring", has(ItemRegistry.Uranium))
+                .save(output, "chaotic:uranium_ring_recipe");
     }
 }

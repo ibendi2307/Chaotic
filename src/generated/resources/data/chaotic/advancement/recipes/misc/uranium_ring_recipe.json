@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chaotic:lightning_wand_recipe"
+        "recipe": "chaotic:uranium_ring_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "lightning_wand": {
+    "uranium_ring": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_ingot"
+            "items": "chaotic:uranium"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "lightning_wand"
+      "uranium_ring"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chaotic:lightning_wand_recipe"
+      "chaotic:uranium_ring_recipe"
     ]
   }
 }

@@ -2,17 +2,5 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "chaotic:item/lightning_wand"
-  },
-  "display": {
-    "thirdperson_righthand": {
-      "scale": [1.2, 1.2, 1.2],
-      "rotation": [0,90,0],
-      "translation": [0,2,-2]
-    },
-    "firstperson_righthand": {
-      "scale": [1.2, 1.2, 1.2],
-      "rotation": [17.5,90,0],
-      "translation": [0,4.5,-2]
-    }
   }
 }

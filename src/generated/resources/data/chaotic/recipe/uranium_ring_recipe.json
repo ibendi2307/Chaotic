@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "U": "chaotic:uranium"
+  },
+  "pattern": [
+    " G ",
+    "U G",
+    " G "
+  ],
+  "result": {
+    "id": "chaotic:uranium_ring"
+  }
+}
