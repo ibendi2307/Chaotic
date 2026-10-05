@@ -121,6 +121,7 @@ dependencies {
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
+    implementation files("libs/azurelib-neo-26.2-4.0.0.jar")
     // Compile against only the API artifact
     compileOnly files('libs/curios-neoforge-16.0.0+26.2-api.jar')
     // Use the full Curios API jar at runtime

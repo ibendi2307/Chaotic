@@ -2,6 +2,7 @@ package com.example.chaotic.datagen;
 
 import com.example.chaotic.BlockRegistry;
 import com.example.chaotic.ItemRegistry;
+import com.example.chaotic.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -35,6 +36,37 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+        smeltingResultFromBase(ItemRegistry.Animatium.asItem(), ItemRegistry.Raw_Animatium.asItem());
+        shaped(RecipeCategory.COMBAT, ItemRegistry.Messor.asItem())
+                .pattern("  A")
+                .pattern("AAA")
+                .pattern("S  ")
+                .define('A', ItemRegistry.Animatium)
+                .define('S', Items.STICK)
+                .unlockedBy("animatium", has(ItemRegistry.Animatium))
+                .group("Animatium")
+                .save(output, "chaotic:messor_recipe");
+
+        shaped(RecipeCategory.MISC, ItemRegistry.Soul_Core.asItem())
+                .pattern("IGI")
+                .pattern("GSG")
+                .pattern("IGI")
+                .define('I', Items.IRON_INGOT)
+                .define('G', Items.GLASS_PANE)
+                .define('S', ModTags.Items.Soul_Tag)
+                .unlockedBy("soul_core", has(ModTags.Items.Soul_Tag))
+                .group("Soul")
+                .save(output, "chaotic:soul_core_recipe");
+        shaped(RecipeCategory.COMBAT, ItemRegistry.Securis.asItem())
+                .pattern("ACA")
+                .pattern("AS ")
+                .pattern(" S ")
+                .define('A', ItemRegistry.Animatium)
+                .define('C', ItemRegistry.Soul_Core)
+                .define('S', Items.STICK)
+                .unlockedBy("securis", has(ItemRegistry.Animatium))
+                .group("Animatium")
+                .save(output, "chaotic:securis_recipe");
         shaped(RecipeCategory.COMBAT, ItemRegistry.UraniumSword.get())
                 .pattern("DUD")
                 .pattern("DUD")
@@ -112,5 +144,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('U', ItemRegistry.Uranium)
                 .unlockedBy("uranium_ring", has(ItemRegistry.Uranium))
                 .save(output, "chaotic:uranium_ring_recipe");
+        shaped(RecipeCategory.COMBAT, ItemRegistry.EndSword)
+                .pattern(" O ")
+                .pattern(" O ")
+                .pattern(" P ")
+                .define('O', Items.OBSIDIAN)
+                .define('P', Items.PURPUR_BLOCK)
+                .unlockedBy("end_sword", has(Items.PURPUR_BLOCK))
+                .save(output, "chaotic:end_sword_recipe");
     }
 }

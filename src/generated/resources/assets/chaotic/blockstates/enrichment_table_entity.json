@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chaotic:block/enrichment_table_entity",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chaotic:block/enrichment_table_entity"
+    },
+    "facing=south": {
+      "model": "chaotic:block/enrichment_table_entity",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chaotic:block/enrichment_table_entity",
+      "y": 270
+    }
+  }
+}

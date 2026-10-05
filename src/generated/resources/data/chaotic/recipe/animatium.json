@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "chaotic:raw_animatium",
+  "result": {
+    "id": "chaotic:animatium"
+  }
+}

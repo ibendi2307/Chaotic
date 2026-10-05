@@ -9,10 +9,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = Chaotic.MODID)
@@ -23,7 +21,8 @@ public class DataGeneratorMod {
         PackOutput packout = gen.getPackOutput();
         gen.addProvider(true, new ModelProviderMod(packout));
         CompletableFuture<HolderLookup.Provider> lookupprovider = event.getLookupProvider();
-        gen.addProvider(true, new TagProviderMod(packout, lookupprovider));
+        gen.addProvider(true, new BlockTagProviderMod(packout, lookupprovider));
+        gen.addProvider(true, new ItemTagProvider(packout, lookupprovider));
         gen.addProvider(true, new LootTableProvider(packout, Collections.emptySet(),List.of(new LootTableProvider.SubProviderEntry(BlockLootTablesProvider::new, LootContextParamSets.BLOCK)), lookupprovider));
         gen.addProvider(true, new DataPackProvider(packout, lookupprovider));
         gen.addProvider(true, new CuriosGen(packout,lookupprovider));
@@ -34,6 +33,6 @@ public class DataGeneratorMod {
         net.minecraft.data.DataGenerator gen = event.getGenerator();
         PackOutput packout = gen.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupprovider = event.getLookupProvider();
-        gen.addProvider(true, new TagProviderMod(packout, lookupprovider));
+        gen.addProvider(true, new BlockTagProviderMod(packout, lookupprovider));
     }
 }

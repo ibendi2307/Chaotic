@@ -21,4 +21,14 @@ public class ItemRegistry {
     public static final DeferredItem<Item> LightningWand = ITEMS.registerItem("lightning_wand", lightningwand::new);
     public static final DeferredItem<Item> LightningStaff = ITEMS.registerItem("lightning_staff", lightningstaff::new);
     public static final DeferredItem<Item> UraniumRing = ITEMS.registerItem("uranium_ring", uranium_ring::new);
+    public static final DeferredItem<Item> EndSword = ITEMS.registerItem("end_sword", endsword::new);
+    public static final DeferredItem<Item> Raw_Animatium = ITEMS.registerSimpleItem("raw_animatium");
+    public static final DeferredItem<Item> Animatium = ITEMS.registerItem("animatium", Animatium::new);
+    public static final DeferredItem<Item> Messor = ITEMS.registerItem("messor", Messor::new);
+    public static final DeferredItem<Item> Plain_Soul = ITEMS.registerSimpleItem("plain_soul");
+    public static final DeferredItem<Item> Skeleton_Soul = ITEMS.registerItem("skeleton_soul", SkeletonSoul::new);
+    public static final DeferredItem<Item> Creeper_Soul = ITEMS.registerItem("creeper_soul", CreeperSoul::new);
+    public static final DeferredItem<Item> Zombie_Soul = ITEMS.registerItem("zombie_soul", ZombieSoul::new);
+    public static final DeferredItem<Item> Securis = ITEMS.registerItem("securis", Securis::new);
+    public static final DeferredItem<Item> Soul_Core = ITEMS.registerSimpleItem("soul_core");
 }

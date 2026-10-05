@@ -1,6 +1,7 @@
 package com.example.chaotic.blocks;
 
 import com.example.chaotic.Entitiesreg;
+import com.example.chaotic.blockentities.EUBentity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;

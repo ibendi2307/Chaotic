@@ -14,6 +14,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class ModBiomeModif {
 
     public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_URANIUM_ORE = registerKey("add_overworld_uranium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_OVERWORLD_ANIMATIUM_ORE = registerKey("add_overworld_animatium_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -22,6 +23,10 @@ public class ModBiomeModif {
         context.register(ADD_OVERWORLD_URANIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlaceFeature.OVERWORLD_URANIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_OVERWORLD_ANIMATIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(biomes.getOrThrow(
+                BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlaceFeature.OVERWORLD_ANIMATIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

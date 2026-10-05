@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModPlaceFeature {
     public static final ResourceKey<PlacedFeature> OVERWORLD_URANIUM_ORE_PLACED_KEY = registerKey("overworld_uranium_ore_placed");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_ANIMATIUM_ORE_PLACED_KEY = registerKey("overworld_animatium_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configFeature = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -26,6 +27,10 @@ public class ModPlaceFeature {
                 configFeature.getOrThrow(ModConfigFeature.OVERWORLD_URANIUM_ORE_KEY),
                 OrePlacements.commonOrePlacement(6, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),
                         VerticalAnchor.absolute(40))));
+        register(context, OVERWORLD_ANIMATIUM_ORE_PLACED_KEY, configFeature.getOrThrow(ModConfigFeature.OVERWORLD_ANIMATIUM_ORE_KEY),
+                OrePlacements.commonOrePlacement(4,
+                        HeightRangePlacement.uniform(VerticalAnchor.BOTTOM,VerticalAnchor.absolute(20))));
+
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -23,11 +23,18 @@ public class ModConfigFeature {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URANIUM_ORE_KEY =
             ResourceKey.create(Registries.CONFIGURED_FEATURE,
                     Identifier.fromNamespaceAndPath("chaotic", "uraniumore"));
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ANIMATIUM_ORE_KEY =
+            ResourceKey.create(Registries.CONFIGURED_FEATURE,
+                    Identifier.fromNamespaceAndPath("chaotic", "animatium_ore"));
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacebale = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         register(context, OVERWORLD_URANIUM_ORE_KEY, Feature.ORE,
                 new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplacebale, BlockRegistry.Uraniumore.get().defaultBlockState())),4));
+        register(context, OVERWORLD_ANIMATIUM_ORE_KEY, Feature.ORE, new OreConfiguration(List.of(
+                OreConfiguration.target(stoneReplacebale, BlockRegistry.Animatium_ore.get().defaultBlockState())), 3));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

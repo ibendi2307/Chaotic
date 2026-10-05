@@ -1,6 +1,8 @@
 {
   "values": [
     "chaotic:uraniumore",
-    "chaotic:enriched_uranium_block"
+    "chaotic:enriched_uranium_block",
+    "chaotic:animatium_ore",
+    "chaotic:deepslate_animatium_ore"
   ]
 }

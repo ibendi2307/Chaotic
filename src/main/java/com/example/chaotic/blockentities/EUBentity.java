@@ -1,4 +1,4 @@
-package com.example.chaotic.blocks;
+package com.example.chaotic.blockentities;
 
 import com.example.chaotic.Entitiesreg;
 import net.minecraft.core.BlockPos;

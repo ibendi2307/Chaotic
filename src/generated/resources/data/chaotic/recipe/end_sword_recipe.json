@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": "minecraft:obsidian",
+    "P": "minecraft:purpur_block"
+  },
+  "pattern": [
+    " O ",
+    " O ",
+    " P "
+  ],
+  "result": {
+    "id": "chaotic:end_sword"
+  }
+}
