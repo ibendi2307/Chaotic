@@ -46,7 +46,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("animatium", has(ItemRegistry.Animatium))
                 .group("Animatium")
                 .save(output, "chaotic:messor_recipe");
-
+        shapeless(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.Uranium_Block.asItem(), 9);
         shaped(RecipeCategory.MISC, ItemRegistry.Soul_Core.asItem())
                 .pattern("IGI")
                 .pattern("GSG")

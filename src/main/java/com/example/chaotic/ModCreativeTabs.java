@@ -2,6 +2,7 @@ package com.example.chaotic;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
@@ -26,6 +27,7 @@ public class ModCreativeTabs {
                 output.accept(ItemRegistry.UraniumDrink);
                 output.accept(ItemRegistry.UraniumNecklace);
                 output.accept(ItemRegistry.UraniumRing);
+                output.accept(BlockRegistry.UraniumBlockItem);
             })
 
             .build());
@@ -36,6 +38,35 @@ public class ModCreativeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ItemRegistry.LightningWand);
                 output.accept(ItemRegistry.LightningStaff);
+            })
+
+
+
+            .build());
+    public static final Supplier<CreativeModeTab> Chaotic_Animatium = CREATIVE_MODE_TABS.register("chaotic_animatium", () -> CreativeModeTab.builder()
+            .icon(() -> new ItemStack(BlockRegistry.Animatium_oreItem.get()))
+            .title(Component.translatable("creativetab.chaotic.animatium"))
+            .withTabsBefore(Identifier.fromNamespaceAndPath(Chaotic.MODID, "chaoitc_uranium"))
+            .displayItems((itemDisplayParameters, output) -> {
+                output.accept(BlockRegistry.Animatium_oreItem);
+                output.accept(BlockRegistry.Deepslate_Animatium_oreItem);
+                output.accept(ItemRegistry.Raw_Animatium);
+                output.accept(ItemRegistry.Animatium);
+                output.accept(ItemRegistry.Messor);
+                output.accept(ItemRegistry.Securis);
+            })
+
+            .build());
+    public static final Supplier<CreativeModeTab> Chaotic_Souls = CREATIVE_MODE_TABS.register("chaoitc_souls", () -> CreativeModeTab.builder()
+            .icon(() -> new ItemStack(ItemRegistry.Creeper_Soul.get()))
+            .title(Component.translatable("creativetab.chaotic.souls"))
+            .withTabsBefore(Identifier.fromNamespaceAndPath(Chaotic.MODID, "chaotic_animatium"))
+            .displayItems((itemDisplayParameters, output) -> {
+                output.accept(ItemRegistry.Plain_Soul);
+                output.accept(ItemRegistry.Creeper_Soul);
+                output.accept(ItemRegistry.Zombie_Soul);
+                output.accept(ItemRegistry.Skeleton_Soul);
+                output.accept(ItemRegistry.Soul_Core);
             })
 
 

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "Animatium",
+  "key": {
+    "A": "chaotic:animatium",
+    "C": "chaotic:soul_core",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "ACA",
+    "AS ",
+    " S "
+  ],
+  "result": {
+    "id": "chaotic:securis"
+  }
+}

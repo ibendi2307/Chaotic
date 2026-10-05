@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_uranium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:uranium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "description": {
+      "translate": "advancement.chaotic.uranium_root.description"
+    },
+    "icon": {
+      "id": "chaotic:uranium"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.chaotic.uranium_root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_uranium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

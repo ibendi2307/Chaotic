@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "Soul",
+  "key": {
+    "G": "minecraft:glass_pane",
+    "I": "minecraft:iron_ingot",
+    "S": "#chaotic:soul"
+  },
+  "pattern": [
+    "IGI",
+    "GSG",
+    "IGI"
+  ],
+  "result": {
+    "id": "chaotic:soul_core"
+  }
+}

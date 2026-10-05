@@ -7,7 +7,7 @@
   "item.chaotic.uranium_cookie": "Uranium Cookie",
   "item.chaotic.uranium_drink": "Uranium Drink",
   "creativetab.chaotic.uranium_tab": "Chaotic: Uranium",
-  "creativetab.chaotic.misc": "Misc",
+  "creativetab.chaotic.misc": "Chaotic: Misc",
   "block.chaotic.enriched_uranium_block": "Block of Enriched Uranium",
   "item.chaotic.enriched_uranium": "Enriched Uranium",
   "item.chaotic.uranium_necklace": "Uranium Necklace",
@@ -16,6 +16,22 @@
   "item.chaotic.uranium_ring": "Uranium Ring",
   "item.chaotic.end_sword": "End Sword",
   "item.chaotic.messor.tooltip": "Extract souls of killed",
+  "item.chaotic.raw_animatium": "Raw Animatium",
+  "item.chaotic.animatium": "Animatium",
+  "item.chaotic.messor": "Messor",
+  "item.chaotic.plain_soul": "Plain Soul",
+  "item.chaotic.creeper_soul": "Creeper Soul",
+  "item.chaotic.skeleton_soul": "Skeleton Soul",
+  "item.chaotic.zombie_soul": "Zombie Soul",
+  "item.chaotic.securis": "Securis",
+  "item.chaotic.soul_core": "Soul Core",
+  "block.chaotic.animatium_ore": "Animatium Ore",
+  "block.chaotic.deepslate_animatium_ore": "Deepslate Animatium Ore",
+  "block.chaotic.uranium_block": "Block Of Uranium",
+  "creativetab.chaotic.souls": "Chaotic: Souls",
+  "creativetab.chaotic.animatium": "Chaotic: Animatium",
+
+
 
 
 

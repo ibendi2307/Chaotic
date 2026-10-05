@@ -49,7 +49,7 @@ public class ModelProviderMod extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.Skeleton_Soul.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.Creeper_Soul.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.Zombie_Soul.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.Securis.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.Soul_Core.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.Securis.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.Soul_Core.get(), ModelTemplates.FLAT_ITEM);
     }
 }

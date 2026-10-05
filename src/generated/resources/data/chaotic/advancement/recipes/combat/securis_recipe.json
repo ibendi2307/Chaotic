@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chaotic:securis_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "securis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:animatium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "securis"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chaotic:securis_recipe"
+    ]
+  }
+}

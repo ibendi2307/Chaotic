@@ -26,6 +26,7 @@ public class DataGeneratorMod {
         gen.addProvider(true, new LootTableProvider(packout, Collections.emptySet(),List.of(new LootTableProvider.SubProviderEntry(BlockLootTablesProvider::new, LootContextParamSets.BLOCK)), lookupprovider));
         gen.addProvider(true, new DataPackProvider(packout, lookupprovider));
         gen.addProvider(true, new CuriosGen(packout,lookupprovider));
+        gen.addProvider(true, new AdvancementsGenerator(packout, lookupprovider));
         gen.addProvider(true, new ModRecipeProvider.Runner(packout,lookupprovider));
     }
     @SubscribeEvent
