@@ -11,6 +11,8 @@ public class BlockRegistry {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Chaotic.MODID);
     public static final DeferredBlock<Block> Uraniumore = BLOCKS.registerBlock("uraniumore", uraniumore::new);
     public static final DeferredItem<BlockItem> Uraniumoreitem = ItemRegistry.ITEMS.registerSimpleBlockItem(Uraniumore);
+    public static final DeferredBlock<Block> DeepslateUraniumore = BLOCKS.registerBlock("deepslate_uranium_ore", deepslateuraniumblock::new);
+    public static final DeferredItem<BlockItem> DeepslateUraniumoreitem = ItemRegistry.ITEMS.registerSimpleBlockItem(DeepslateUraniumore);
     public static final DeferredBlock<Block> EnrichedUraniumBlock = BLOCKS.registerBlock("enriched_uranium_block", enricheduraniumblock::new);
     public static final DeferredItem<BlockItem> EUBItem = ItemRegistry.ITEMS.registerSimpleBlockItem(EnrichedUraniumBlock);
     public static final DeferredBlock<Block> Uranium_Block = BLOCKS.registerBlock("uranium_block", uraniumblock::new);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": "minecraft:pale_oak_log",
+    "R": "minecraft:resin_clump",
+    "S": "chaotic:soul_core"
+  },
+  "pattern": [
+    "PRP",
+    "RSR",
+    "PRP"
+  ],
+  "result": {
+    "id": "chaotic:creaking_soul"
+  }
+}

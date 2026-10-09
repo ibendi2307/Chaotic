@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "creaking_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:soul_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chaotic:creaking_soul_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "creaking_soul"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chaotic:creaking_soul_recipe"
+    ]
+  }
+}

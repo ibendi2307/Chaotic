@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "joined": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "description": {
+      "translate": "advancement.chaotic.soul_root.description"
+    },
+    "icon": {
+      "id": "chaotic:plain_soul"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.chaotic.soul_root.title"
+    }
+  },
+  "requirements": [
+    [
+      "joined"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

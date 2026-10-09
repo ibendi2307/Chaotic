@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": "chaotic:soul_core",
+    "R": "minecraft:sculk_catalyst",
+    "S": "chaotic:sculk_soul"
+  },
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SRS"
+  ],
+  "result": {
+    "id": "chaotic:warden_soul"
+  }
+}

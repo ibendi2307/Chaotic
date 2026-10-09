@@ -42,6 +42,7 @@ public class Chaotic {
         modEventBus.addListener(this::commonSetup);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         Entitiesreg.BLOCK_ENTITY_REGISTER.register(modEventBus);
+        ModMobEffects.Mob_Effets.register(modEventBus);
         // Register the Deferred Register to the mod event bus so blocks get registered
         //BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:goat_horn",
+    "chaotic:sculk_soul"
+  ],
+  "result": {
+    "id": "chaotic:sonic_boom_horn"
+  }
+}

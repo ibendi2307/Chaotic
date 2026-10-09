@@ -1,0 +1,33 @@
+{
+  "parent": "chaotic:chaotic/soul_root",
+  "criteria": {
+    "has_great_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#chaotic:great_soul"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chaotic.great_soul.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "chaotic:securis"
+    },
+    "title": {
+      "translate": "advancement.chaotic.great_soul.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_great_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -38,6 +38,8 @@ public class ModCreativeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ItemRegistry.LightningWand);
                 output.accept(ItemRegistry.LightningStaff);
+                output.accept(ItemRegistry.EndSword);
+                output.accept(ItemRegistry.Sonic_Boom_Horn);
             })
 
 
@@ -63,10 +65,14 @@ public class ModCreativeTabs {
             .withTabsBefore(Identifier.fromNamespaceAndPath(Chaotic.MODID, "chaotic_animatium"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ItemRegistry.Plain_Soul);
+                output.accept(ItemRegistry.Sculk_Soul);
                 output.accept(ItemRegistry.Creeper_Soul);
                 output.accept(ItemRegistry.Zombie_Soul);
                 output.accept(ItemRegistry.Skeleton_Soul);
                 output.accept(ItemRegistry.Soul_Core);
+                output.accept(ItemRegistry.Warden_Soul);
+                output.accept(ItemRegistry.Creaking_soul);
+
             })
 
 

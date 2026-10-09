@@ -24,6 +24,8 @@ public class BlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(BlockRegistry.Uranium_Block.get());
         dropSelf(BlockRegistry.Enrichment_Table.value());
         add(BlockRegistry.Animatium_ore.value(),createOreDrop(BlockRegistry.Animatium_ore.get(), ItemRegistry.Raw_Animatium.get()));
+        add(BlockRegistry.DeepslateUraniumore.value(),
+                createOreDrop(BlockRegistry.Deepslate_Animatium_ore.get(), ItemRegistry.Uranium.get()));
         add(BlockRegistry.Deepslate_Animatium_ore.value(),
                 createOreDrop(BlockRegistry.Deepslate_Animatium_ore.get(), ItemRegistry.Raw_Animatium.get()));
     }

@@ -1,0 +1,32 @@
+{
+  "parent": "chaotic:chaotic/messor",
+  "criteria": {
+    "has_securis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:securis"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chaotic.securis.description"
+    },
+    "icon": {
+      "id": "chaotic:securis"
+    },
+    "title": {
+      "translate": "advancement.chaotic.securis.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_securis"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

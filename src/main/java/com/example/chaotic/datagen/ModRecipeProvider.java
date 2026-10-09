@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -75,7 +76,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('D', Items.GOLD_INGOT)
                 .define('U', ItemRegistry.Uranium)
                 .unlockedBy("uranium_sword",has(ItemRegistry.Uranium))
-                .group("Uranium")
                 .save(output, "chaotic:uranium_sword_recipe");
         shaped(RecipeCategory.FOOD, ItemRegistry.UraniumCookie.get())
                 .pattern("   ")
@@ -83,14 +83,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("   ")
                 .define('D', Items.WHEAT)
                 .define('U', ItemRegistry.Uranium.get())
-                .group("Uranium")
+                .group("uranium_food")
                 .unlockedBy("uranium_cookie", has(ItemRegistry.Uranium))
                 .save(output, "chaotic:uranium_cookie_recipe");
         shaped(RecipeCategory.MISC, ItemRegistry.UraniumNecklace.get())
                 .pattern("NNN")
                 .pattern("GUG")
                 .pattern(" G ")
-                .group("Uranium")
+                .group("uranium_curios")
                 .define('N', Items.GOLD_NUGGET)
                 .define('G', Items.GOLD_INGOT)
                 .define('U', ItemRegistry.Uranium)
@@ -116,6 +116,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern(" U ")
                 .pattern(" B ")
                 .pattern("   ")
+                .group("uranium_food")
                 .define('U', ItemRegistry.Uranium)
                 .define('B', Items.GLASS_BOTTLE)
                 .unlockedBy("uranium_drink", has(ItemRegistry.Uranium))
@@ -140,6 +141,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern(" G ")
                 .pattern("U G")
                 .pattern(" G ")
+                .group("uranium_curios")
                 .define('G',Items.GOLD_INGOT)
                 .define('U', ItemRegistry.Uranium)
                 .unlockedBy("uranium_ring", has(ItemRegistry.Uranium))
@@ -152,5 +154,36 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('P', Items.PURPUR_BLOCK)
                 .unlockedBy("end_sword", has(Items.PURPUR_BLOCK))
                 .save(output, "chaotic:end_sword_recipe");
+        shaped(RecipeCategory.MISC, ItemRegistry.Creaking_soul)
+                .pattern("PRP")
+                .pattern("RSR")
+                .pattern("PRP")
+                .define('R', Items.RESIN_CLUMP)
+                .define('S', ItemRegistry.Soul_Core)
+                .define('P', Blocks.PALE_OAK_LOG)
+                .unlockedBy("creaking_soul", has(ItemRegistry.Soul_Core))
+                .save(output, "chaotic:creaking_soul_recipe");
+        shaped(RecipeCategory.MISC, ItemRegistry.Sculk_Soul)
+                .pattern("SSS")
+                .pattern("SPS")
+                .pattern("SSS")
+                .define('S', Blocks.SCULK)
+                .define('P', ModTags.Items.Soul_Tag)
+                .unlockedBy("sculk_soul", has(ItemRegistry.Plain_Soul))
+                .save(output, "chaotic:soul_corruption");
+        shaped(RecipeCategory.MISC, ItemRegistry.Warden_Soul)
+                .pattern("SSS")
+                .pattern("SCS")
+                .pattern("SRS")
+                .define('S', ItemRegistry.Sculk_Soul)
+                .define('C', ItemRegistry.Soul_Core)
+                .define('R', Blocks.SCULK_CATALYST)
+                .unlockedBy("warden_soul", has(ItemRegistry.Sculk_Soul))
+                .save(output, "chaotic:warden_soul_craft");
+        shapeless(RecipeCategory.COMBAT, ItemRegistry.Sonic_Boom_Horn)
+                .requires(Items.GOAT_HORN)
+                .requires(ItemRegistry.Sculk_Soul)
+                .unlockedBy("sonic_boom_horn", has(ItemRegistry.Sculk_Soul))
+                .save(output,"chaotic:sonic_boom_horn_craft");
     }
 }

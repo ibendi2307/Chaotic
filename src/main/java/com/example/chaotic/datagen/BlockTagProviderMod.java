@@ -21,10 +21,12 @@ public class BlockTagProviderMod extends BlockTagsProvider {
                 .add(BlockRegistry.Uraniumore.getKey())
                 .add(BlockRegistry.EnrichedUraniumBlock.getKey())
                 .add(BlockRegistry.Animatium_ore.getKey())
-                .add(BlockRegistry.Deepslate_Animatium_ore.getKey());
+                .add(BlockRegistry.Deepslate_Animatium_ore.getKey())
+                .add(BlockRegistry.DeepslateUraniumore.getKey());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(BlockRegistry.Uraniumore.getKey())
-                .add(BlockRegistry.EnrichedUraniumBlock.getKey());
+                .add(BlockRegistry.EnrichedUraniumBlock.getKey())
+                .add(BlockRegistry.DeepslateUraniumore.getKey());
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(BlockRegistry.Animatium_ore.getKey())
                 .add(BlockRegistry.Deepslate_Animatium_ore.getKey());

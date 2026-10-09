@@ -21,6 +21,7 @@ public class SkeletonSoul extends Item {
             for(int i = 0; i < 4; i++) {
                 Arrow arrow = new Arrow(level, player.getX(), player.getY()+ 1.5D, player.getZ(), new ItemStack(Items.ARROW),  null);
                 arrow.setBaseDamage(5.0D);
+                arrow.setOwner(player);
                 arrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0, 5f , 1f);
                 level.addFreshEntity(arrow);
             }

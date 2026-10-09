@@ -1,0 +1,32 @@
+{
+  "parent": "chaotic:chaotic/soul_root",
+  "criteria": {
+    "has_soul_gain": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#chaotic:soul"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chaotic.soul_gain.description"
+    },
+    "icon": {
+      "id": "chaotic:securis"
+    },
+    "title": {
+      "translate": "advancement.chaotic.soul_gain.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_soul_gain"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

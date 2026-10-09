@@ -1,0 +1,33 @@
+{
+  "parent": "chaotic:chaotic/soul_root",
+  "criteria": {
+    "has_animatium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:animatium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chaotic.animatium.description"
+    },
+    "icon": {
+      "id": "chaotic:animatium"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.chaotic.animatium.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_animatium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

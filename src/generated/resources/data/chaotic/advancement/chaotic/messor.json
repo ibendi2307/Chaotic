@@ -1,0 +1,34 @@
+{
+  "parent": "chaotic:chaotic/soul_root",
+  "criteria": {
+    "has_Messor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:messor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.chaotic.messor.description"
+    },
+    "icon": {
+      "id": "chaotic:messor"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.chaotic.messor.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_Messor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

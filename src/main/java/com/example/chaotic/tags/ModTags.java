@@ -13,6 +13,7 @@ public class ModTags {
 
         public static final TagKey<Item> Soul_Tag = createtag("soul");
 
+        public static final TagKey<Item> Great_Soul = createtag("great_soul");
 
         private static TagKey<Item> createtag (String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(Chaotic.MODID, name));

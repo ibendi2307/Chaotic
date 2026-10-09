@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chaotic:sonic_boom_horn_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sonic_boom_horn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chaotic:sculk_soul"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "sonic_boom_horn"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chaotic:sonic_boom_horn_craft"
+    ]
+  }
+}

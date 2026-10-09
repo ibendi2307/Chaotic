@@ -31,4 +31,8 @@ public class ItemRegistry {
     public static final DeferredItem<Item> Zombie_Soul = ITEMS.registerItem("zombie_soul", ZombieSoul::new);
     public static final DeferredItem<Item> Securis = ITEMS.registerItem("securis", Securis::new);
     public static final DeferredItem<Item> Soul_Core = ITEMS.registerSimpleItem("soul_core");
+    public static final DeferredItem<Item> Creaking_soul = ITEMS.registerItem("creaking_soul", CreakingSoul::new);
+    public static final DeferredItem<Item> Warden_Soul = ITEMS.registerItem("warden_soul", WardenSoul::new);
+    public static final DeferredItem<Item> Sculk_Soul = ITEMS.registerSimpleItem("sculk_soul");
+    public static final DeferredItem<Item> Sonic_Boom_Horn = ITEMS.registerItem("sonic_boom_horn", com.example.chaotic.Items.Sonic_Boom_Horn::new);
 }
