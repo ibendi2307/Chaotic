@@ -1,1 +1,1 @@
-Random Stuff Mod
+Chaotic is a content mod for Minecraft built on the "everything at once" principle. If you're bored with standard survival and want to inject a sense of surprise into your world, this project is just for you. It brings together tons of independent ideas: from unusual tools and blocks to unique mechanics that can either save your life or test your luck. You never know what's going to come in handy next!»
